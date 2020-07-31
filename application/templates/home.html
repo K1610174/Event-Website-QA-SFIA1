@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+<div class="home">
+    {% for event in events %}
+        <div>
+            <h3>{{ event.name }}</h3>
+            <ul>
+                <li><b>Event Date: </b> {{ event.event_date }}</li>
+                <li><b>Description: </b> {{ event.description }}</li>
+            </ul>
+                <p> -- {{ event.location }}</p>
+        </div/>
+    {% endfor %}
+    <div>
+	 
+    </div>
+</div>
+    
+{% endblock body_content %}
