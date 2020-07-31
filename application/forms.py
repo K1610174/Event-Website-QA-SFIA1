@@ -31,6 +31,18 @@ class EventForm(FlaskForm):
     submit = SubmitField('Add Event')
     
 class RegistrationForm(FlaskForm):
+    first_name = StringField('First Name',
+        validators=[
+            DataRequired(),
+            Length(min=2, max=30)
+        ]
+    )
+    last_name = StringField('Last Name',
+        validators=[
+            DataRequired(),
+            Length(min=3, max=30)
+        ]
+    )
     email = StringField('Email',
         validators = [
             DataRequired(),
