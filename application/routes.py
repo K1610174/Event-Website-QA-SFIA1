@@ -8,8 +8,9 @@ from flask_login import login_user, current_user, logout_user, login_required
 
 @app.route('/home')
 def home():
+    user = Users.query.all()
     eventData = Events.query.all()
-    return render_template('home.html', title='Home',events=eventData)
+    return render_template('home.html', title='Home',events=eventData, user=user)
 
 @app.route('/about')
 def about():

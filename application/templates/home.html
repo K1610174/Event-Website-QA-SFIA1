@@ -3,12 +3,13 @@
 <div class="home">
     {% for event in events %}
         <div>
-            <h3>{{ event.name }}</h3>
+            <h3>{{ event.event_name }}</h3>
             <ul>
                 <li><b>Event Date: </b> {{ event.event_date }}</li>
                 <li><b>Description: </b> {{ event.description }}</li>
             </ul>
-                <p> -- {{ event.location }}</p>
+                <p>{{ event.location }}</p>
+		<p> {{ user.first_name }} </p>
         </div/>
     {% endfor %}
     <div>
