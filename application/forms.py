@@ -56,3 +56,25 @@ class UpdateEventForm(FlaskForm):
         ]
     )
     submit = SubmitField('Update')
+
+class OrganiserForm(FlaskForm):
+    first_name = StringField('First Name',
+        validators = [
+            DataRequired(),
+            Length(min=2, max=30)
+        ]
+    )
+    last_name = StringField('Last Name', 
+        validators = [
+            DataRequired(),
+            Length(min=2, max=30)
+        ]
+    )
+    email = StringField('Email',
+        validators = [
+            DataRequired(),
+            Email()
+        ]
+    )
+    submit = SubmitField('Add Organiser')
+

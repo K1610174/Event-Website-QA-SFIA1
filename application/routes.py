@@ -59,3 +59,21 @@ def delete(event_id):
     db.session.delete(event)
     db.session.commit()
     return redirect(url_for('home'))
+
+@app.route('/organiser', methods=['GET','POST'])
+def organiser():
+    form = OrganiserForm()
+    if form.validate_on_submit():
+        orgData = Organisers(
+            first_name = form.first_name.data,
+            last_name = form.last_date.data,
+            email = form.email.data   
+        )
+        db.session.add(orgData)
+        db.session.commit()
+
+        return redirect(url_for('home'))
+    else:
+        print(form.errors)
+
+    return render_template('organiser.html', title='Add Organiser',form=form)

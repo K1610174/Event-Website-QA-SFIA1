@@ -2,7 +2,7 @@
 {% block body_content %}
     <div class='form'>
         <form method='POST' action=''>
-            {{ form.hidden_tag() }}
+            {{ form.hidden_tag() }} <br>
             {{ form.event_name.label }}
             <p>{{ form.event_name }}</p>
             {% if form.event_name.errors %}
