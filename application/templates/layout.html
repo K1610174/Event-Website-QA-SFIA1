@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ title }}</title>
+</head>
+<body>
+<h1>{{  title  }}</h1>
+	<div class=navbar>
+	     <a href="{{ url_for('home') }}"> Home Page </a> |
+		 <a href="{{ url_for('event') }}"> Add an event </a> |
+		 <a href="{{ url_for('organiser') }}"> Add an organiser </a> |
+	</div>
+{% block body_content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block body_content %}
+    <div class='form'>
+        <form method='POST' action=''>
+            {{ form.hidden_tag() }} <br>
+            {{ form.event_name.label }}
+            <p>{{ form.event_name }}</p>
+            {% if form.event_name.errors %}
+                <div class="error">
+                {% for error in form.event_name.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+                </div>
+            {% endif %}
+            <br>
+            {{ form.event_date.label }}
+            <p>{{ form.event_date }}</p>
+            {% if form.event_date.errors %}
+                <div class="error">
+                {% for error in form.event_date.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+                </div>
+            {% endif %}
+            <br>
+            {{ form.description.label }}
+            <p>{{ form.description }}</p>
+            {% if form.description.errors %}
+                <div class="error">
+                {% for error in form.description.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+                </div>
+            {% endif %}
+            <br>
+            {{ form.location.label }}
+            <p>{{ form.location }}</p>
+            {% if form.location.errors %}
+                <div class="error">
+                {% for error in form.location.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+                </div>
+            {% endif %}
+            <br>
+            {{ form.submit }}
+        </form>
+    </div>
+{% endblock body_content %}
