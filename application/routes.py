@@ -1,7 +1,7 @@
 from flask import render_template,redirect, url_for, request
 from application import app,db
-from application.models import Events, Event_Details
-from application.forms import EventForm, UpdateEventForm
+from application.models import Events, Event_Details, Organisers
+from application.forms import EventForm, UpdateEventForm, OrganiserForm
 
 @app.route('/')
 @app.route('/home')
@@ -66,7 +66,7 @@ def organiser():
     if form.validate_on_submit():
         orgData = Organisers(
             first_name = form.first_name.data,
-            last_name = form.last_date.data,
+            last_name = form.last_name.data,
             email = form.email.data   
         )
         db.session.add(orgData)
