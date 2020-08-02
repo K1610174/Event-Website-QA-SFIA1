@@ -1,6 +1,6 @@
 from flask import render_template, redirect, url_for, request
 from application import app, db, bcrypt
-from application.models import Events, Users
+from application.models import Events, Users, Event_Details
 from application.forms import EventForm, RegistrationForm, LoginForm, UpdateAccountForm
 from flask_login import login_user, current_user, logout_user, login_required
 
@@ -95,11 +95,12 @@ def account():
 @login_required
 def account_delete():
     user = current_user.id
-    events = Events.query.filter_by(user_id=user)
-    for event in events:
-        db.session.delete(event)
-
     account = Users.query.filter_by(id=user).first()
+    deets = Event_Details.query.filter_by(event_id = event.id).all()
+    #events = Events.query.details.filter_by(user_id=user)
+    for deet in deets:
+       db.session.delete(deet)
+
     logout_user()
     db.session.delete(account)
     db.session.commit()
