@@ -19,6 +19,7 @@ def event():
             event_date = form.event_date.data,
             location = form.location.data,
             description = form.description.data
+            
         )
         db.session.add(eventData)
         db.session.commit()
@@ -67,7 +68,8 @@ def organiser():
         orgData = Organisers(
             first_name = form.first_name.data,
             last_name = form.last_name.data,
-            email = form.email.data   
+            email = form.email.data
+            organiser = form.event_name.data
         )
         db.session.add(orgData)
         db.session.commit()
