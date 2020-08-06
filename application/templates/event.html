@@ -13,15 +13,8 @@
                 </div>
             {% endif %}
             <br>
-            {{ form.event_date.label }}
+	     {{ form.event_date.label }}
             <p>{{ form.event_date }}</p>
-            {% if form.event_date.errors %}
-                <div class="error">
-                {% for error in form.event_date.errors %}
-                    <span>{{ error }}</span>
-                {% endfor %}
-                </div>
-            {% endif %}
             <br>
             {{ form.description.label }}
             <p>{{ form.description }}</p>
@@ -43,6 +36,7 @@
                 </div>
             {% endif %}
             <br>
+
             {{ form.submit }}
         </form>
     </div>

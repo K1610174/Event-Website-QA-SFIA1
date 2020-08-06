@@ -1,14 +1,44 @@
 {% extends "layout.html" %}
+
 {% block body_content %}
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 33.33%;
+  float: left;
+  height:250px;
+  padding:10px;
+  background-color:lightblue;
+}
+
+
+.grid-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  background-color:lightblue;
+  padding: 2px 16px;
+}
+</style>
 	{% if events %}
 		{% for event in events %}
-			<div>
-				<h3>{{ event.event_name }} </h3>
-				<ul>
+			<div class="grid-container">
+				<div class="header">
+				    <h3>{{ event.event_name }} </h3>
+				 </div>
+				
+				 <div class="container">
 					<li><b>Event Date: </b> {{ event.event_date }}</li>
 					<li><b>Description: </b> {{ event.description }}</li>
-				</ul>
+				
 					{{ event.location }}<br>
+				 </div><br>
 					<a href="{{ url_for('update', event_id=event.event_id) }} ">Update Event</a> |
 					<a href="{{ url_for('delete', event_id=event.event_id) }} ">Delete Event</a> |
 					<br>

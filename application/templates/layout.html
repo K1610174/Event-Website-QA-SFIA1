@@ -2,14 +2,62 @@
 <html>
 <head>
 <title>{{ title }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  color:black;
+  padding:10px;
+}
+</style>
 </head>
 <body>
 <h1>{{  title  }}</h1>
-	<div class=navbar>
-	     <a href="{{ url_for('home') }}"> Home Page </a> |
-		 <a href="{{ url_for('event') }}"> Add an event </a> |
-		 <a href="{{ url_for('organiser') }}"> Add an organiser </a> |
+
+	<div class="topnav">
+	     <a href="{{ url_for('home') }}"> Events </a>
+	     <a href="{{ url_for('event') }}"> Add an event </a>
+	      <a href="{{ url_for('organiser') }}"> Add an organiser </a>
 	</div>
-{% block body_content %}{% endblock %}
+	
+	<div class="content">
+
+	    {% block body_content %}{% endblock %}
+	</div>
 </body>
 </html>
