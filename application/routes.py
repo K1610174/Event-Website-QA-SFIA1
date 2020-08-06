@@ -7,7 +7,7 @@ from application.forms import EventForm, UpdateEventForm, OrganiserForm
 @app.route('/home')
 def home():
     eventData=Events.query.all()
-    return render_template('home.html', title='Home Page', events=eventData)
+    return render_template('home.html', title='Events', events=eventData)
 
 
 @app.route('/event', methods=['GET','POST'])
@@ -18,7 +18,7 @@ def event():
             event_name = form.event_name.data,
             event_date = form.event_date.data,
             location = form.location.data,
-            description = form.description.data
+            description = form.description.data,
         )
         db.session.add(eventData)
         db.session.commit()
@@ -67,7 +67,7 @@ def organiser():
         orgData = Organisers(
             first_name = form.first_name.data,
             last_name = form.last_name.data,
-            email = form.email.data   
+            email = form.email.data
         )
         db.session.add(orgData)
         db.session.commit()
@@ -77,3 +77,4 @@ def organiser():
         print(form.errors)
 
     return render_template('organiser.html', title='Add Organiser',form=form)
+

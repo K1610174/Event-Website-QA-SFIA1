@@ -1,5 +1,6 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, DateField, SubmitField
+from wtforms import StringField, SubmitField
+from wtforms.fields.html5 import DateTimeField
 from datetime import datetime
 from wtforms.validators import DataRequired, Length, Email, ValidationError
 from application.models import Events
@@ -11,7 +12,7 @@ class EventForm(FlaskForm):
             Length(min=2, max=30)
         ]
     )
-    event_date = DateField('Event Date', format='%m/%d/%Y',
+    event_date = DateTimeField('Event Date', format='%d/%m/%Y',default=datetime.utcnow ,
         validators = [
             DataRequired()
         ]
@@ -38,7 +39,7 @@ class UpdateEventForm(FlaskForm):
             Length(min=2, max=30)
         ]
     )
-    event_date = DateField('Event Date', format='%m/%d/%Y',
+    event_date = DateTimeField('Event Date', format='%d/%m/%Y %H:%M',default=datetime.utcnow ,
         validators = [
             DataRequired()
         ]
