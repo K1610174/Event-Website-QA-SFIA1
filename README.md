@@ -46,21 +46,22 @@ For this project, I decided to develop a simple event application that allows a 
 ### Database Structure
 Using an entity relationship diagram (ERD), I modeled the database structure with only the events and organiser tables implemented in the application.
 
-ERD
+
 
 The ERD above shows a many to many relationship between the Events and the organisers using an association table (EventDetails). This means that events can have multiple organisers as well as organisers have many events.
 
 ## CI PIPELINE
 
-
+![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/CI-Pipeline.PNG)
 
 
 ## PROJECT TRACKING
 JIRA project management software was used to keep track of the progress of this project using a Kanban board.
-
-Backlog
-
-Roadmap
+###### Backlog
+![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/backlog1.PNG)
+![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/baclog2.PNG)
+###### Roadmap
+![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/roadmap.png)
 
 
 ## RISK ASSESSMENT
@@ -72,13 +73,17 @@ https://docs.google.com/spreadsheets/d/1uG0-4umykmeh4dQfKx4uUiqPzO27zNEqC6dxjtGQ
 pytest unit testing and intergration testing
 
 ## FRONT-END DESIGN
-Events
+####### Events
+![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/eventspage.PNG)
 
-Add Event
+###### Add Event
+![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/addevent.PNG)
 
-Update
+###### Update
+![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/update.PNG)
 
-Add Organiser
+###### Add Organiser
+![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/addorganiser.PNG)
 
 ## ISSUES
 can only enter the time of event using the update page instead of creation of the event.
