@@ -6,10 +6,17 @@
   - [ARCHITECTURE](#architecture)
     - [Database Structure](#database-structure)
   - [CI PIPELINE](#ci-pipeline)
+    - [Technologies](#technologies)
   - [PROJECT TRACKING](#project-tracking)
+        - [Backlog](#backlog)
+        - [Roadmap](#roadmap)
   - [RISK ASSESSMENT](#risk-assessment)
   - [TESTING](#testing)
   - [FRONT-END DESIGN](#front-end-design)
+        - [Events](#events)
+        - [Add Event](#add-event)
+        - [Update](#update)
+        - [Add Organiser](#add-organiser)
   - [ISSUES](#issues)
   - [FUTURE IMPROVEMENTS](#future-improvements)
   - [AUTHORS](#authors)
@@ -27,19 +34,19 @@ This project is an application with which a user can create, read, update and de
 
 ### My Aproach
 For this project, I decided to develop a simple event application that allows a user to do the following:
-    Create a new event that is stored with details:
-        Event Name
-        Event Date
-        Description
-        Location
+* Create a new event that is stored with details:
+  - Event Name
+  - Event Date
+  - Description
+  - Location
+  
+* View the events created by clicking the Events link in the navigation bar.
+* Update and Delete the events.
 
-    View the events created by clicking the Events link in the navigation bar.
-    Update and Delete the events.
-
-    Create an organiser that is stored with details:
-        First Name
-        Last Name
-        Email
+* Create an organiser that is stored with details:
+  - First Name
+  - Last Name
+  - Email
 
 
 ## ARCHITECTURE 
@@ -54,13 +61,22 @@ The ERD above shows a many to many relationship between the Events and the organ
 
 ![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/CI-Pipeline.PNG)
 
+### Technologies
+- JIRA: Project tracking
+- Python: Source code
+- FLask: Micro-framework
+- Pytest: Unit Testing, Intergration Testing
+- Git: Version Control System
+- Jenkins: CI Server
+- Google Cloud Platform: Virtual Machine and SQL Database
+  
 
 ## PROJECT TRACKING
 JIRA project management software was used to keep track of the progress of this project using a Kanban board.
-###### Backlog
+##### Backlog
 ![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/backlog1.PNG)
 ![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/baclog2.PNG)
-###### Roadmap
+##### Roadmap
 ![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/roadmap.png)
 
 
@@ -70,25 +86,30 @@ The risk assessment can be found by following the link below.
 https://docs.google.com/spreadsheets/d/1uG0-4umykmeh4dQfKx4uUiqPzO27zNEqC6dxjtGQjgI/edit?usp=sharing
 
 ## TESTING
-pytest unit testing and intergration testing
+Pytest Unit testing and Intergration testing were used to carry out the tests for the application. 
+An overall test coverage report of 89% was achieved with all the written tests passing.
+
+![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/test-cov.PNG)
 
 ## FRONT-END DESIGN
-###### Events
+
+##### Events
 ![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/eventspage.PNG)
 
-###### Add Event
+##### Add Event
 ![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/addevent.PNG)
 
-###### Update
+##### Update
 ![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/update.PNG)
 
-###### Add Organiser
+##### Add Organiser
 ![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/addorganiser.PNG)
 
 ## ISSUES
-can only enter the time of event using the update page instead of creation of the event.
+The time of event can only be entered into the database using the update page instead of creation of the event.
+
 ## FUTURE IMPROVEMENTS
-Include a register and login functionality
-match the organisers to the events on the website
+Currently, there is no registration or login functionality for the application. I would like different organisers to be able to login nd create events as well as see events created by other organisers. 
+
 ## AUTHORS
 Amanda Kekitinisa
