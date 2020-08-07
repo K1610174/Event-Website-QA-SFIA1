@@ -46,21 +46,21 @@ For this project, I decided to develop a simple event application that allows a 
 ### Database Structure
 Using an entity relationship diagram (ERD), I modeled the database structure with only the events and organiser tables implemented in the application.
 
-![Database](https://drive.google.com/file/d/1OOftB8wpYa6s1c3J45PZ_u8J7mDY4rp2/view?usp=sharing)
+![Database](https://drive.google.com/file/d/1OOftB8wpYa6s1c3J45PZ_u8J7mDY4rp2/view?usp=sharing.png)
 
 The ERD above shows a many to many relationship between the Events and the organisers using an association table (EventDetails). This means that events can have multiple organisers as well as organisers have many events.
 
 ## CI PIPELINE
 
-![](https://drive.google.com/file/d/1ULzsvyXLUKdx9Du6hzFAhYxDuBsMYaFt/view?usp=sharing)
+![](https://drive.google.com/file/d/1ULzsvyXLUKdx9Du6hzFAhYxDuBsMYaFt/view?usp=sharing.png)
 
 ## PROJECT TRACKING
 JIRA project management software was used to keep track of the progress of this project using a Kanban board.
 https://cakeintin.atlassian.net/jira/software/projects/KFE/boards/2/backlog
 
-![Backlog](https://drive.google.com/file/d/13VYKmjddUKsOTuNVk1_SX5gSYvMUzGxH/view?usp=sharing)
-![](https://drive.google.com/file/d/1dEtCuGfjEacb0_OfjpZZEyhdWFUlPpi4/view?usp=sharing)
-![Roadmap](https://drive.google.com/file/d/1OVqk-cGNufP81CRrows3L7kWUzOCEGir/view?usp=sharing)
+![Backlog](https://drive.google.com/file/d/13VYKmjddUKsOTuNVk1_SX5gSYvMUzGxH/view?usp=sharing.png)
+![](https://drive.google.com/file/d/1dEtCuGfjEacb0_OfjpZZEyhdWFUlPpi4/view?usp=sharing.png)
+![Roadmap](https://drive.google.com/file/d/1OVqk-cGNufP81CRrows3L7kWUzOCEGir/view?usp=sharing.png)
 ## RISK ASSESSMENT
 The risk assessment can be found by following the link below.
 https://docs.google.com/spreadsheets/d/1uG0-4umykmeh4dQfKx4uUiqPzO27zNEqC6dxjtGQjgI/edit?usp=sharing
@@ -68,10 +68,10 @@ https://docs.google.com/spreadsheets/d/1uG0-4umykmeh4dQfKx4uUiqPzO27zNEqC6dxjtGQ
 pytest unit testing and intergration testing
 
 ## FRONT-END DESIGN
-![Events page](https://drive.google.com/file/d/1ZT-BCZ9MnzTRXhT48G9vNV8dTnh-MUZY/view?usp=sharing)
-![](https://drive.google.com/file/d/1ALZwINMiLcFJzI0mBLjF6C6PK-oij766/view?usp=sharing)
-![](https://drive.google.com/file/d/1yKzCi_G2p-t6X7WJL3c36ieYyobwbVPe/view?usp=sharing)
-![](https://drive.google.com/file/d/19KhGfI5CfJdMBGsPqP_ZM9BUcTAS6GWq/view?usp=sharing)
+![Events page](https://drive.google.com/file/d/1ZT-BCZ9MnzTRXhT48G9vNV8dTnh-MUZY/view?usp=sharing.png)
+![](https://drive.google.com/file/d/1ALZwINMiLcFJzI0mBLjF6C6PK-oij766/view?usp=sharing.png)
+![](https://drive.google.com/file/d/1yKzCi_G2p-t6X7WJL3c36ieYyobwbVPe/view?usp=sharing.png)
+![](https://drive.google.com/file/d/19KhGfI5CfJdMBGsPqP_ZM9BUcTAS6GWq/view?usp=sharing.png)
 ## ISSUES
 can only enter the time of event using the update page instead of creation of the event.
 ## FUTURE IMPROVEMENTS
