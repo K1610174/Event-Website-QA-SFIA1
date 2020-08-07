@@ -73,6 +73,7 @@ The ERD above shows a many to many relationship between the Events and the organ
 
 ## PROJECT TRACKING
 JIRA project management software was used to keep track of the progress of this project using a Kanban board.
+https://cakeintin.atlassian.net/jira/software/projects/KFE/boards/2/backlog
 ##### Backlog
 ![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/backlog1.PNG)
 ![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/baclog2.PNG)
