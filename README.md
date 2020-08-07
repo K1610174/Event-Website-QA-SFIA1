@@ -62,14 +62,16 @@ The ERD above shows a many to many relationship between the Events and the organ
 ![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/CI-Pipeline.PNG)
 
 ### Technologies
-- JIRA: Project tracking
+- JIRA Kanban Board: Project tracking
 - Python: Source code
-- FLask: Micro-framework
-- Pytest: Unit Testing, Intergration Testing
+- Flask: Front-end Design
+- Pytest: Unit Testing
+- Selenium: Intergration Testing
 - Git: Version Control System
 - Jenkins: CI Server
-- Google Cloud Platform: Virtual Machine and SQL Database
-  
+- Google Cloud Platform: 
+    - Virtual Machine (Linux Ubuntu)
+    - Database SQL Server
 
 ## PROJECT TRACKING
 JIRA project management software was used to keep track of the progress of this project using a Kanban board.
