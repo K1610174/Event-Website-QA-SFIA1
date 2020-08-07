@@ -46,7 +46,7 @@ For this project, I decided to develop a simple event application that allows a 
 ### Database Structure
 Using an entity relationship diagram (ERD), I modeled the database structure with only the events and organiser tables implemented in the application.
 
-
+![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/database_erd.png)
 
 The ERD above shows a many to many relationship between the Events and the organisers using an association table (EventDetails). This means that events can have multiple organisers as well as organisers have many events.
 
@@ -73,7 +73,7 @@ https://docs.google.com/spreadsheets/d/1uG0-4umykmeh4dQfKx4uUiqPzO27zNEqC6dxjtGQ
 pytest unit testing and intergration testing
 
 ## FRONT-END DESIGN
-####### Events
+###### Events
 ![](https://github.com/K1610174/QA-SFIA1/blob/documentation/images/eventspage.PNG)
 
 ###### Add Event
